@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--qa-question-answer-->
+    <div class="qa_box">
+        <!--Header Start-->
+        <div class="qa_header">
+            <span>Score:<span id="score"> 0</span></span>
+            <span id="countdown">0</span>
+        </div>
+        <!--Header End-->
+
+        <!--Body Start-->
+        <div class="qa_body">
+            <div class="qa_set active">
+                <h4>1.Css açılımı hangisinde doğru olarak verilmiştir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a1">
+                    <span>Custom Style Sheets</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a1">
+                    <span>Colorful Style Sheets</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a1">
+                    <span>Computer Style Sheets</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a1" valid="valid">
+                    <span>Cascading Style Sheets</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>2.Css'de zemin rengini değiştirmek için hangisi kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a2" valid="valid">
+                    <span>background-color</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a2">
+                    <span>bg-color</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a2">
+                    <span>bg-round</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a2">
+                    <span>bcolor</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>3.Yazı rengini değiştirmek için hangisi kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a3">
+                    <span>fontcolor</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a3">
+                    <span>text-color</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a3" valid="valid">
+                    <span>color</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a3">
+                    <span>font-color</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>4.Hangisi Css kod bloğu nesnesini bold yapar?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a4">
+                    <span>span {text-size:bold}</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a4" valid="valid">
+                    <span>span {font-weight:bold}</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a4">
+                    <span>span style="font-size:bold</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a4">
+                    <span>span style="text-size:bold</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>5.Hangisi yazının ilk harfinin büyük harfle başlaması için kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a5" valid="valid">
+                    <span>text-transform:capitalize</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a5">
+                    <span>text-transform:uppercase</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a5">
+                    <span>text:capitalize</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a5">
+                    <span>text-transform:lowercase</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>6.p etiketinin font büyüklüğünü 14px yapabilmek için hangisi kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a6">
+                    <span>p {14px}</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a6" valid="valid">
+                    <span>p {font-size:14px;}</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a6">
+                    <span>p {text-size:14px;}</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a6">
+                    <span>p {font:14px;}</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>7.margin 5px 10px 3px 8px; dizilimine göre sol dış boşluk değeri kaç px olur?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a7">
+                    <span>3px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a7">
+                    <span>10px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a7" valid="valid">
+                    <span>8px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a7">
+                    <span>5px</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>8.Cssde yorum bloğu nasıl eklenir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a8" valid="valid">
+                    <span>/* */</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a8">
+                    <span>// //</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a8">
+                    <span>//</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a8">
+                    <span>/! /</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>9.# işareti hangi seçiciyi belirtir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a9">
+                    <span>class</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a9">
+                    <span>tag</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a9">
+                    <span>first</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a9" valid="valid">
+                    <span>id</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>10.Cssdeki linklerin altındaki çizgiyi kaldırmak için hangisi kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a10">
+                    <span>a {decoration:no underline}</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a10" valid="valid">
+                    <span>a {text-decoration:none}</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a10">
+                    <span>a {hyperlink:no underline}</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a10">
+                    <span>a {text-decoration:no underline}</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>11.Global Css kullanımında, stil şablonumuzu hangi etiket içinde tanımlarız?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a11">
+                    <span>script</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a11" valid="valid">
+                    <span>style</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a11">
+                    <span>stile</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a11">
+                    <span>css</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>12.Hangisi css kodu web sitesini yatay olarak ortalamak için kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a12">
+                    <span>site-align: center</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a12">
+                    <span>margin: center</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a12" valid="valid">
+                    <span>margin: auto</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a12">
+                    <span>margin: 0 auto</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>13.Hangisi madde işaretlerini gizlemek için kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a13">
+                    <span>list-style-type: no-bullet</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a13">
+                    <span>list: none</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a13">
+                    <span>bulletpoints: none</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a13" valid="valid">
+                    <span>list-style-type: none</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>14.Hangi Css kodu ile yazı fontu değiştirilir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a14">
+                    <span>font-name:</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a14">
+                    <span>font:</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a14" valid="valid">
+                    <span>font-family:</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a14">
+                    <span>fontname:</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>15.Kenar dışı boşluğu ayarlamak için hangi özellik kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a15" valid="valid">
+                    <span>margin</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a15">
+                    <span>border</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a15">
+                    <span>padding</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a15">
+                    <span>margin-width</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>16.Uzunluk birimlerinden 1em kaç piksele karşılık gelir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a16">
+                    <span>25px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a16">
+                    <span>18px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a16">
+                    <span>40px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a16" valid="valid">
+                    <span>16px</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>17.Uzunluk birimlerinden 1em kaç piksele karşılık gelir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a17">
+                    <span>25px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a17">
+                    <span>18px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a17">
+                    <span>40px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a17" valid="valid">
+                    <span>16px</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>18.Uzunluk birimlerinden 1em kaç piksele karşılık gelir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a18">
+                    <span>25px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a18">
+                    <span>18px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a18">
+                    <span>40px</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a18" valid="valid">
+                    <span>16px</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>19.Aşağıdaki kenar çizgisi biçemlerinden hangisi noktalı çizgi oluşturur?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a19">
+                    <span>solid</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a19">
+                    <span>inset</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a19">
+                    <span>dashedx</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a19" valid="valid">
+                    <span>dottedx</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>20.Ögeleri konumlandırırken konumunu nasıl göreceli yaparız?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a20">
+                    <span>position:fixed;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a20">
+                    <span>position:absolute;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a20" valid="valid">
+                    <span>position:relative;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a20">
+                    <span>position:mixed;</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>21.Üst üste çakışan ögelerin hangisinin altta, hangisinin üstte olacağını hangi özelliği kullanarak
+                    ayarlarız?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a21">
+                    <span>k-index</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a21" valid="valid">
+                    <span>z-index</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a21">
+                    <span>v-index</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a21">
+                    <span>n-index</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>22.Aşağıdaki özelliklerinden hangisi bir metindeki harflerin arasındaki mesafeyi ayarlamaya yarar?
+                </h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a22" valid="valid">
+                    <span>letter-spacing</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a22">
+                    <span>word-spacing</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a22">
+                    <span>word-space</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a22">
+                    <span>wprd-width</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>23.Aşağıdaki satırlardan hangisi bir metindeki kelimelerin tüm harflerini büyük harfe çevirir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a23">
+                    <span>text-transform:bigcase;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a23">
+                    <span>text-transform:lowercase;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a23">
+                    <span>text-transform:capitalize;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a23" valid="valid">
+                    <span>text-transform:uppercase;</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>24.Kenar içi boşluğu ayarlamak için hangi özellik kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a24">
+                    <span>margin</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a24">
+                    <span>border</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a24" valid="valid">
+                    <span>padding</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a24">
+                    <span>margin-width</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>25.Aşağıdaki kenar çizgisi biçemlerinden hangisi çift çizgi oluşturur?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a25">
+                    <span>solid</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a25" valid="valid">
+                    <span>double</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a25">
+                    <span>dashed</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a25">
+                    <span>dotted</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>26.Ögeleri konumlandırırken konumunu nasıl sabit yaparız?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a26" valid="valid">
+                    <span>position:fixed;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a26">
+                    <span>position:absolute;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a26">
+                    <span>position:relative;</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a26">
+                    <span>position:mixed;</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>27.Menülerde menünün üzerine geldiğimizde özelliklerin değişmesi için kullandığımız etiket
+                    hangisidir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a27">
+                    <span>a:active</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a27">
+                    <span>a:blank</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a27">
+                    <span>a:visited</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a27" valid="valid">
+                    <span>a:hover</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>28.Yatay menü yaparken display özelliğine hangi değer verilmelidir?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a28">
+                    <span>inline</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a28">
+                    <span>left</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a28" valid="valid">
+                    <span>block</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a28">
+                    <span>bloke</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>29.Bir tablo hücresinin genişliğini diğer hücrelerden daha büyük yapmak için td tag’inin hangi
+                    özelliği kullanılır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a29">
+                    <span>cols</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a29">
+                    <span>rows</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a29" valid="valid">
+                    <span>colspan</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a29">
+                    <span>rowspan</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>30.test.css dosyalarındaki styleleri kullanmak için hangi tag kullanılmalıdır?</h4>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a30">
+                    <span>html</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a30">
+                    <span>style</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a30" valid="valid">
+                    <span>link</span>
+                </div>
+                <div class="qa_answer_row">
+                    <input type="radio" name="a30">
+                    <span>body</span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4>Your total score <span id="totalScore"> 0 </span> out of 100 </h4>
+            </div>
+        </div>
+        <!--Body End-->
+
+        <!--Footer Start-->
+        <div class="qa_footer">
+            <span class="btn1" id="skip">Skip</span>
+        </div>
+        <!--Footer End-->
+    </div>
+
+    <script type="text/javascript" src="custom.js"></script>
+</body>
+</html>
